@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+background-color: #121212;
+font-family: 'Montserrat', sans-serif;
+}
+
+.ContenedorPadre{
+display: grid;
+grid-template-columns: 300px 1fr;
+grid-template-rows: min-content 1fr min-content;
+margin-bottom: 80px;
+}
+
+/*Parte de arriba*/
+.Arriba{
+display: flex;
+justify-content: space-between;
+padding: 10px 20px;
+background-color: #101010;
+position: fixed;
+top: 0;
+right: 0;
+width: calc(100% - 250px);
+}
+
+
+.Flechas{
+    display: flex;
+    gap: 30px;
+    justify-content: left;
+    color: #ffffff;
+}
+
+.F{
+ background-color: #121212;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-right: 10px;
+}
+
+.F i{
+color: white;
+font-size: 14px;
+}
+
+.Usuario{
+    color: #ffffff;
+    display: flex;
+    align-self:center;
+    gap: 30px
+    
+}
+.Usuario ul{
+    list-style: none;
+}
+
+.Usuario li{
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+    margin-top: 0%;
+}
+
+.Usuario li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.Usuario li a:hover{
+    color: fff;
+   font-size: 16px;
+   color: #ffffff;
+}
+
+.divider{
+    color: #ffffff;
+    font-size: 26px;
+    width: auto;
+    gap: 5px;
+}
+
+.Boton{
+    border: none;
+	outline: none;
+	background: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+/*Parte de alado*/
+
+.Lado {
+    background-color: black;
+    color: #b3b3b3;
+    padding:24px;
+
+    grid-row: 1/3;
+    grid-column: 1/2;
+
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+
+    position:fixed;
+    width:250px;
+    height:100vh
+}
+
+img{
+    width: 130px;
+    height: 50x;
+}
+
+h1{
+    font-size: 1px ;
+    color: black ;
+}
+
+.IB {
+  
+    display:flex;
+    flex-direction: column;
+    gap: 3px
+}
+
+.IB li{
+    list-style: none;
+    padding: 10px 0px;
+    margin-left: 0%;
+}
+
+.IB li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items:baseline;
+    justify-content: flex-start;
+    gap: 20px;
+    font-weight: bold;
+
+}
+
+.IB li a:hover{
+    color: #ffffff;
+}
+
+.IB li a:hover.fa{
+    color: #b3b3b3;
+}
+
+.BPL a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items:baseline;
+    justify-content: flex-start;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.BPL a:hover{
+    color: #ffffff;  
+}
+
+.BPL a:hover.fa{
+    color: #b3b3b3;
+}
+
+.BPL button{
+    border: none;
+	outline: none;
+	background: transparent;
+	color: #b3b3b3;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+    padding: 10px 0px;
+
+	display: flex;
+	gap: 15px;
+	cursor: pointer;
+}
+
+.BPL button:hover{
+    color: #ffffff;
+}
+
+.Links{
+    display: flex;
+	flex-direction: column;
+	padding: 0px;
+    font-size:12px;
+	gap: 2px;
+    margin-top: 10%;
+	margin-bottom: 5px;
+}
+
+.Links a{
+    color:  #ffffff;
+    text-decoration: none;
+}
+
+.Links button{
+    border: 1px solid #727272;
+	background: none;
+	color: #fff;
+	padding: 10px;
+	width: 200px;
+	border-radius: 20px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	gap: 5px;
+	font-family: inherit;
+	font-weight: bold;
+    text-align: justify;
+	font-size: 12px;
+	cursor: pointer;
+    margin-top: 15%;
+
+}
+
+/*Principal, playlists*/
+
+.Principal {
+	grid-row: 1/3;
+	grid-column: 2/-1;
+
+	background-color: #121212;
+	padding: 25px;
+    padding-top: 7%;
+
+	display: flex;
+    flex-direction: column;
+	gap: 30px;
+}
+
+.Titulo {
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+    padding-bottom: 2%;
+}
+
+.Titulo:hover {
+	text-decoration: underline;
+}
+
+
+.Playlists {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.CCSP {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 24px;
+}
+
+.Lista {
+	background-color: #181818;
+	border-radius: 5px;
+	padding: 16px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+	position: relative;
+}
+
+.Lista:hover{
+	background-color: #282828;
+}
+
+.TI img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.TI {
+	overflow: hidden;
+}
+
+.Tarjeta h3 {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.Tarjeta p {
+	font-size: 13px;
+	color: #b3b3b3;
+	font-weight: 400;
+	line-height: 1.5;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+
+.footer {
+	grid-row: 3/4;
+	grid-column: 2/-1;
+	color: #fff;
+	background-color: #121212;
+	padding: 60px 40px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.ContLinksF {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #2a2a2a;
+	padding-bottom: 50px;
+}
+
+.LinksF {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-size: 16px;
+}
+
+.LinksF a {
+	text-decoration: none;
+	color: #a7a7a7;
+}
+
+.LinksF a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+
+
+/*Banner final*/
+.Banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 10px 20px;
+	background-image: linear-gradient(90deg, #af2896, #509bf5);
+	color: #fff;
+
+	position: fixed;
+	bottom: 0;
+	z-index: 20;
+	width: 100%;
+	height: 80px;
+}
+
+.Banner .Muestra {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.Banner .Muestra span {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.Banner .Muestra p {
+	font-size: 16px;
+}
